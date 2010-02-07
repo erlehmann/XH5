@@ -8,7 +8,7 @@
 			<article id="post-<?php the_ID(); ?>">
 				<header>
 					<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permalink zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-					<p>Posted on <?php the_time('F jS, Y'); ?> by <?php the_author(); ?></p>
+					<p>Pfostiert <?php the_time('F jS, Y'); ?> von <?php the_author(); ?></p>
 				</header>
 				<section>
 					<?php the_content('Kostenlose Vollversion …'); ?>
