@@ -6,35 +6,35 @@
 			<article id="post-<?php the_ID(); ?>">
 				<header>
 					<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-					<p>Posted on <?php the_time('F jS, Y'); ?> by <?php the_author(); ?></p>
+					<p>Pfostiert <?php the_time('F jS, Y'); ?> von <?php the_author(); ?></p>
 				</header>
 				<section>
-					<?php the_content('Read more on "'.the_title('', '', false).'" &raquo;'); ?>
+					<?php the_content('Kostenlose Vollversion …'); ?>
 
 				</section>
 				<footer>
-					<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+					<?php wp_link_pages(array('before' => '<p><strong>Seiten:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 					<?php the_tags( '<p>Tags: ', ', ', '</p>'); ?>
 
 					<p>
-						This entry was posted on <?php the_time('l, F jS, Y'); ?> at <?php the_time(); ?> and is filed under <?php the_category(', ') ?>. 
-						You can follow any responses to this entry through the <?php post_comments_feed_link('RSS 2.0'); ?> feed.
+						Dieser Artikel wurde pfostiert am <?php the_time('l, F jS, Y'); ?> um <?php the_time(); ?> und ist kategorisiert <?php the_category(', ') ?>. 
+						Du kannst Kommentaren mit Hilfe des Feeds folgen: <?php post_comments_feed_link('RSS 2.0'); ?>
 
 						<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
 							// both comments and pings open ?>
-							You can <a href="#respond">leave a response</a>, or <a href="<?php trackback_url(); ?>" rel="trackback">trackback</a> from your own site.
+							Das Hinterlassen von <a href="#respond">Kommentaren</a> und <a href="<?php trackback_url(); ?>" rel="trackback">Trackbacks</a> ist erlaubt und erwünscht.
 
 						<?php } elseif (!('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
 							// only pings are open ?>
-							Responses are currently closed, but you can <a href="<?php trackback_url(); ?> " rel="trackback">trackback</a> from your own site.
+							Kommentare sind geschlossen, <a href="<?php trackback_url(); ?> " rel="trackback">Trackbacks</a> erlaubt.
 
 						<?php } elseif (('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
 							// comments are open, pings are not ?>
-							You can skip to the end and leave a response. Pinging is currently not allowed.
+							Kommentare sind erlaubt, Trackbacks geschlossen.
 
 						<?php } elseif (!('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
 							// neither comments nor pings are open ?>
-							Both comments and pings are currently closed.
+							Kommentare und Trackbacks sind geschlossen.
 
 						<?php } edit_post_link('Edit this entry','','.'); ?>
 

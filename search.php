@@ -5,13 +5,13 @@
 			<?php if (have_posts()) : ?>
 
 			<article id="post-<?php the_ID(); ?>">
-				<h1>Search Results for &ldquo;<?php the_search_query(); ?>&rdquo;</h1>
+				<h1>Suchergebnisse für „<?php the_search_query(); ?>“</h1>
 				<ol>
 
 					<?php while (have_posts()) : the_post(); ?>
 
 					<li>
-						<h3><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+						<h3><a href="<?php the_permalink() ?>" rel="bookmark" title="Permalink zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 						<?php the_excerpt(); ?>
 					</li>
 
@@ -26,8 +26,8 @@
 			<?php else : ?>
 
 			<article>
-				<h1>Not Found</h1>
-				<p>Sorry, but the requested resource was not found on this site.</p>
+				<h1>Artikel nicht gefunden</h1>
+				<p>Der angeforderte Artikel wurde nicht gefunden. Wahrscheinlich haben Sie sich vertrippt.</p>
 				<?php get_search_form(); ?>
 			</article>
 

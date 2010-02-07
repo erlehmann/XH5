@@ -5,15 +5,15 @@
 		<section>
 			<article id="post-<?php the_ID(); ?>">
 				<header>
-					<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-					<p>Posted on <?php the_time('F jS, Y'); ?> by <?php the_author(); ?></p>
+					<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permalink zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+					<p>Pfostiert <?php the_time('F jS, Y'); ?> von <?php the_author(); ?></p>
 				</header>
 				<section>
-					<?php the_content('Read more on "'.the_title('', '', false).'" &raquo;'); ?>
+					<?php the_content('Kostenlose Vollversion …'); ?>
 
 				</section>
 				<footer>
-					<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+					<?php wp_link_pages(array('before' => '<p><strong>Seiten:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 				</footer>
 			</article>
 		</section>
@@ -22,7 +22,7 @@
 
 		<section>
 			<article>
-				<p>Sorry, no posts matched your criteria.</p>
+				<p>Kein Artikel entsprach den gewünschten Kriterien.</p>
 			</article>
 		</section>
 

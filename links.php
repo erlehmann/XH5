@@ -7,7 +7,7 @@ Template Name: Links
 
 		<section>
 			<article>
-				<h1>Favorite Links</h1>
+				<h1>Lieblingslinks</h1>
 				<ul>
 					<?php wp_list_bookmarks(); ?>
 				</ul>

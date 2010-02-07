@@ -1,5 +1,5 @@
 					<form method="get" action="<?php bloginfo('url'); ?>/">
-						<label for="s">Search the site: </label>
+						<label for="s">Seite durchsuchen: </label>
 						<input type="text" id="s" name="s" value="<?php the_search_query(); ?>">
-						<input type="submit" value="Search">
+						<input type="submit" value="Finden">
 					</form>

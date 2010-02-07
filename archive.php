@@ -31,15 +31,15 @@
 
 			<article id="post-<?php the_ID(); ?>">
 				<header>
-					<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-					<p>Posted on <?php the_time('F jS, Y'); ?> by <?php the_author(); ?></p>
+					<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permalink zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+					<p>Pfostiert <?php the_time('F jS, Y'); ?> von <?php the_author(); ?></p>
 				</header>
 				<section>
 					<?php the_excerpt(); ?>
 
 				</section>
 				<footer>
-					<p><?php the_tags('Tags: ', ', ', '<br/>'); ?> Posted in <?php the_category(', '); ?><?php edit_post_link('Edit', '', ''); ?> <?php comments_popup_link('Respond to this post &raquo;', '1 Response &raquo;', '% Responses &raquo;'); ?></p>
+					<p><?php the_tags('Tags: ', ', ', '<br/>'); ?> Pfostiert in <?php the_category(', '); ?><?php edit_post_link('Bearbeiten', '', ''); ?> <?php comments_popup_link('Kommentieren', 'Ein Kommentar', '% Kommentare'); ?></p>
 				</footer>
 			</article>
 
@@ -52,8 +52,8 @@
 			<?php else : ?>
 
 			<article>
-				<h1>Not Found</h1>
-				<p>Sorry, but the requested resource was not found on this site.</p>
+				<h1>Artikel nicht gefunden</h1>
+				<p>Der angeforderte Artikel wurde nicht gefunden. Wahrscheinlich haben Sie sich vertrippt.</p>
 				<?php get_search_form(); ?>
 			</article>
 

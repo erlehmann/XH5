@@ -2,8 +2,8 @@
 
 		<section>
 			<article>
-				<h1>Error 404 - Not Found</h1>
-				<p>Sorry, but the requested resource was not found on this site. Please try again or contact the administrator for assistance.</p>
+				<h1>Artikel nicht gefunden</h1>
+				<p>Der angeforderte Artikel wurde nicht gefunden. Wahrscheinlich haben Sie sich vertrippt.</p>
 				<?php get_search_form(); ?>
 			</article>
 		</section>
