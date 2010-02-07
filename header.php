@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 	<head>
 
-		<!-- "H5": The HTML-5 WordPress Template Theme -->
+		<!-- "XH5": The XHTML-5 WordPress Template Theme -->
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>"/>
 		<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 		<meta name="description" content="<?php bloginfo('description'); ?>"/>
