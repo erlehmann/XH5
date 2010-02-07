@@ -19,7 +19,7 @@
 
 			<article <?php echo $oddcomment; ?>id="comment-<?php comment_ID(); ?>">
 				<header>
-					<h4><?php echo get_avatar( $comment, 32 ); ?> <cite><?php comment_author_link(); ?></cite> &bull; <a href="#comment-<?php comment_ID(); ?>" title="Permalink for this comment"><?php comment_date('F jS, Y'); ?> at <?php comment_time(); ?></a> <?php edit_comment_link('Edit',' &bull; ',''); ?></h4>
+					<h4><?php echo get_avatar( $comment, 32 ); ?> <cite><?php comment_author_link(); ?></cite><a href="#comment-<?php comment_ID(); ?>" title="Permalink for this comment"><?php comment_date('F jS, Y'); ?> at <?php comment_time(); ?></a> <?php edit_comment_link('Edit','',''); ?></h4>
 					<?php if ($comment->comment_approved == '0') : ?>
 						<p>Your comment is awaiting moderation.</p>
 					<?php endif; ?>

@@ -45,7 +45,7 @@
 			<?php comments_template(); ?>
 
 			<nav>
-				<p><?php previous_post_link(); ?> &bull; <?php next_post_link(); ?></p>
+				<p><?php previous_post_link(); ?><?php next_post_link(); ?></p>
 			</nav>
 		</section>
 

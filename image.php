@@ -13,7 +13,7 @@
 					<?php the_content('Read more on "'.the_title('', '', false).'" &raquo;'); ?>
 
 					<nav>
-						<p><?php previous_image_link(); ?> &bull; <?php next_image_link(); ?></p>
+						<p><?php previous_image_link(); ?><?php next_image_link(); ?></p>
 					</nav>
 				</section>
 				<footer>
@@ -50,7 +50,7 @@
 		<?php comments_template(); ?>
 
 		<nav>
-			<p><?php previous_post_link(); ?> &bull; <?php next_post_link(); ?></p>
+			<p><?php previous_post_link(); ?><?php next_post_link(); ?></p>
 		</nav>
 
 	<?php endwhile; else: ?>
