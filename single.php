@@ -36,7 +36,7 @@
 							// neither comments nor pings are open ?>
 							Kommentare und Trackbacks sind geschlossen.
 
-						<?php } edit_post_link('Edit this entry','','.'); ?>
+						<?php } edit_post_link('Diesen Artikel bearbeiten','','.'); ?>
 
 					</p>
 				</footer>
@@ -53,7 +53,7 @@
 
 		<section>
 			<article>
-				<p>Sorry, no posts matched your criteria.</p>
+				<p>Kein Artikel entsprach den gewünschten Kriterien.</p>
 			</article>
 		</section>
 
