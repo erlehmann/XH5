@@ -78,9 +78,9 @@
 
                 <!-- p>Allowed <abbr title="HyperText Markup Language">HTML:</abbr> tags: <code><?php echo allowed_tags(); ?></code></p -->
                 <label for="comment">Comment</label>
-                <textarea name="comment" id="comment" cols="55" rows="10" tabindex="4"></textarea>
-                <input name="submit" type="submit" id="submit" tabindex="5" value="Kommentar abgeben">
-                <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>">
+                <textarea name="comment" id="comment" cols="55" rows="10" tabindex="4"/>
+                <input name="submit" type="submit" id="submit" tabindex="5" value="Kommentar abgeben"/>
+                <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>"/>
                 <?php do_action('comment_form', $post->ID); ?>
 
             </form>
