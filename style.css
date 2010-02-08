@@ -26,6 +26,8 @@ header, footer, section, article, aside, nav {
 body {
 	margin: 0 auto;
 	width: 960px;
+	background-image: url(images/body-light.png);
+	background-color: #888a85;
 	}
 nav+section {
 	overflow: hidden;
