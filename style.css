@@ -20,66 +20,82 @@ Tags: minimalist, template, xhtml5
 
 /* == BASICS == */
 
+/*
+* {
+    margin: 0;
+    padding: 0;
+}
+*/
+
 header, footer, section, article, aside, nav {
     display: block;
-    }
+}
+
 body {
-    margin: 0 auto;
-    width: 960px;
+    
     background-image: url(images/body-light.png);
-    background-color: #888a85;
-    }
+    background-color: #ad7fa8;
+    line-height: 1.5;
+    margin: 0 auto;
+/*    width: 960px;*/
+    width: 850px;
+}
+
 nav+section {
+    background-color: rgba(255,255,255,0.8);
+    clear: none;
+    float: left;
     overflow: hidden;
     width: 600px;
-    float: left;
-    clear: none;
-    }
+}
 
 /* == LINKS == */
 
+a {
+    text-decoration: underline;
+}
+
 a:link, a:visited {
-    text-decoration: underline;
-    color: #336666;
-    }
-a:hover, a:active {
-    text-decoration: underline;
-    color: #339966;
-    }
+    color: #3465a4;
+}
+
+a:active, a:focus, a:hover {
+    outline: 0.25em solid #fcaf3e;
+    -outline-radius: 0.5em;
+    -moz-outline-radius: 0.5em;
+    -webkit-outline-radius: 0.5em;
+}
 
 /* == HEADER == */
 
 body>header {
-    background: #111;
-    padding: 33px;
-    color: #ccc;
-    }
-    body>header h1 {
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+    body > header h1 {
         margin: 0;
+        font-size: 4em;
+    }
+
+        body > header h1 a:active,
+        body > header h1 a:link,
+        body > header h1 a:hover,
+        body > header h1 a:visited
+        {
+            color: #ad7fa8;
+            text-decoration: none;
+            text-shadow: #ad7fa8 0 0 1em;
         }
-        body>header h1 a:link, body>header h1 a:visited {
-            text-decoration: none;
-            color: #ddd;
-            }
-        body>header h1 a:hover, body>header h1 a:active {
-            text-decoration: none;
-            color: #fff;
-            }
 
-/* == POSTS == */
-
-article[id*=post-] {
-    padding: 10px 0;
-    }
-article>header p, 
-article>footer p {
-    font-style: italic;
-    }
-article+nav {
-    font-weight: bold;
-    }
-section>h1 {
-    padding-top: 10px;
+    body > header h2 {
+        color: #ad7fa8;
+        margin: 0;
+        font-size: 2em;
+        text-shadow: #ad7fa8 0 0 1em;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+        -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
     }
 
 /* == NAVIGATION == */
@@ -87,56 +103,44 @@ section>h1 {
 nav {
     text-align: center;
     clear: both;
-    }
+}
+
 body>nav {
-    background: #ddd;
+    background-color: rgba(255,255,255,0.5);
     padding: 10px 0;
-    }
+}
+
     body>nav ul {
         text-align: left;
         margin: 0;
-        }
+    }
+
         body>nav li {
             margin-right: 20px;
             font-weight: bold;
             display: inline;
-            }
-
-/* == COMMENTS == */
-
-article[id*=comment-] {
-    margin: 15px 0;
-    padding: 10px;
-    }
-    article[id*=comment-] h4 {
-        margin: 0;
         }
-    .alt {
-        border: 1px solid #ddd;
-        background: #eee;
-        }
-form[method=post] label {
-    display: block;
-    }
-form[method=post] input {
-    margin: 2px 0 12px 0;
-    display: block;
-    }
 
 /* == SIDEBAR == */
 
 aside {
-    margin-top: 30px;
+    background-color: rgba(255,255,255,0.8);
     overflow: hidden;
-    width: 300px;
-    float: right;
-    clear: none;
+    width: 250px;
+}
+
+    aside ul
+    {
+        margin: 1em;
+        padding: 0;
     }
-    aside li {
-        list-style: none;
+
+        aside ul li {
+            list-style: none;
         }
-        aside li ul li {
-            list-style: disc outside;
+    
+            aside ul li ul li {
+                list-style: disc outside;
             }
 
 /* == FOOTER == */
@@ -148,6 +152,67 @@ body>footer {
     width: 100%;
     clear: both;
     }
+
+/* == POSTS == */
+
+article {
+    margin: 1em 2em;
+}
+
+article + article {
+    border-top: 2px solid rgba(0,0,0,0.2);
+}
+
+article[id*=post-] {
+    
+}
+
+article>header p, 
+article>footer p {
+    font-style: italic;
+}
+
+article .tags {
+    display: none;
+}
+
+article+nav {
+    font-weight: bold;
+}
+
+    article > section > h1 {
+    }
+
+    article section a:visited:after {
+        content: " ✔";
+        opacity: 0.5;
+        text-decoration: none !important;
+    }
+
+/* == COMMENTS == */
+
+article[id*=comment-] {
+    margin: 15px 0;
+    padding: 10px;
+}
+
+    article[id*=comment-] h4 {
+        margin: 0;
+    }
+
+    .alt {
+        border: 1px solid #ddd;
+        background: #eee;
+    }
+
+form[method=post] label {
+    display: block;
+}
+
+form[method=post] input {
+    margin: 2px 0 12px 0;
+    display: block;
+}
 
 /* == SEARCH == */
 
