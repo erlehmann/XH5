@@ -17,13 +17,19 @@ Tags: minimalist, template, xhtml5
     http://www.opensource.org/licenses/gpl-3.0.html
 */
 
+/* fonts */
+
+@font-face {
+  font-family: "Anonymous Pro";
+  src: local("Anonymous Pro"), url("fonts/AnonymousPro.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Droid Sans";
+  src: local("Droid Sans"), url("fonts/DroidSans.ttf") format('truetype');
+}
 
 /* == BASICS == */
-
-* {
-    margin: 0;
-    padding: 0;
-}
 
 header, footer, section, article, aside, nav {
     display: block;
@@ -52,22 +58,19 @@ nav+section {
 
 a {
     text-decoration: none;
-    -outline-radius: 0.5em;
-    -moz-outline-radius: 0.5em;
-    -webkit-outline-radius: 0.5em;
 }
 
-a:link, a:visited {
-    color: #3465a4;
-    border-bottom: 0.1em solid #3465a4;
+a:active {
+    outline: 0.25em dotted #fcaf3e;
 }
 
 a:focus, a:hover {
     outline: 0.25em solid #fcaf3e;
 }
 
-a:active {
-    outline: 0.25em dotted #fcaf3e;
+a:link, a:visited {
+    color: #3465a4;
+    border-bottom: 0.1em solid #3465a4;
 }
 
 article section a:visited:after {
@@ -158,7 +161,8 @@ aside {
 /* == FOOTER == */
 
 body > footer {
-    padding-top: 100px;
+    background-color: rgba(255,255,255,0.5);
+    padding: 2em;
     text-align: center;
     overflow: hidden;
     width: 100%;
@@ -168,11 +172,12 @@ body > footer {
 /* == POSTS == */
 
 article {
-    margin: 1em 2em;
+    margin: 2em;
 }
 
 article + article {
     border-top: 2px solid rgba(0,0,0,0.2);
+    padding-top: 1em;
 }
 
 article[id*=post-] {
@@ -181,14 +186,19 @@ article[id*=post-] {
 
     article > header,
     article > footer,
-    article > section > p,
-    article > section > ul {
+    article > section p,
+    article > section ul {
         margin: 1em 0;
-        min-height: 1em;
+        min-height: 1.5em;
+    }
+
+    article > header ul,
+    article > header ul + a {
+        margin-bottom: 1em;
     }
 
     article > header ul {
-        float: left;
+        display: inline-block;
     }
 
         article > header ul li {
@@ -196,12 +206,22 @@ article[id*=post-] {
             list-style-type: none;
         }
 
+            article > header ul li a {
+                color: white !important;
+                background-color: #729fcf !important;
+                border: 0.25em solid #729fcf !important;
+                border-radius: 0.25em;
+                -moz-border-radius: 0.25em;
+                -webkit-border-radius: 0.25em;
+            }
+
     article > header ul + a {
         float: right;
     }
 
     article section [title] {
         border-bottom: 0.1em dotted #2e3436;
+        cursor: help;
     }
 
     article section ul {
@@ -209,6 +229,21 @@ article[id*=post-] {
     }
 
     article > footer .author {
+        color: white !important;
+        background-color: #555753 !important;
+        border: 0.25em solid #555753 !important;
+        border-radius: 0.25em;
+        -moz-border-radius: 0.25em;
+        -webkit-border-radius: 0.25em;
+        margin-top: -0.25em;
+    }
+
+    article > footer .post-edit-link {
+        margin: 0 0.25em;
+    }
+
+    article > footer time {
+        float: right;
     }
 
 article+nav {
@@ -247,13 +282,57 @@ form[method=post] input {
 
 /* == ELEMENTS == */
 
+* {
+    font-family: "Droid Sans", sans-serif;
+    margin: 0;
+    outline-radius: 0.5em;
+    -moz-outline-radius: 0.5em;
+    -webkit-outline-radius: 0.5em;
+    padding: 0;
+}
+
+article {
+    counter-reset: edit;
+}
+
+code, kbd {
+    display: inline-block;
+    font-family: "Anonymous Pro", monospace;
+    padding: 0.1em 0.25em;
+    white-space: pre-wrap;
+    border-width: 0.1em;
+    border-style: solid;
+}
+
+code {
+    background-color: #eeeeec;
+    border-color: #888a85;
+    color: #204a87;
+}
+
+kbd {
+    background-color: #555753;
+    border-color: #2e3436;
+    color: #8ae234;
+}
+
 h1, h2, h3, h4, h5, h6 {
     clear: both;
     color: #2e3436;
 }
 
-/* a place for misc. styles */
+ins {
+    text-decoration: none;
+}
 
+ins p:first-child:before {
+    content: "Nachtrag (" counter(edit) "): ";
+    counter-increment: edit;
+    font-weight: bold;
+}
 
+li {
+    margin: 0.5em 0;
+}
 
 /* == ALL YOUR CODE ARE BELONG TO POETRY == */
