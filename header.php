@@ -4,7 +4,6 @@
 	<head>
 
 		<!-- "XH5": The XHTML-5 WordPress Template Theme -->
-		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf8"/>
 		<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 		<meta name="description" content="<?php bloginfo('description'); ?>"/>
 
