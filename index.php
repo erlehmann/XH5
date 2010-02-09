@@ -21,7 +21,7 @@
                 </section>
                 <footer>
                     <span class="author"><?php the_author(); ?></span>
-                    <?php edit_post_link('Bearbeiten', '', ''); ?>
+                    <?php edit_post_link('Artikel bearbeiten', '', ''); ?>
                     <time datetime="<?php the_time('c'); ?>"><?php the_time('j. F Y, G:i'); ?></time>
                 </footer>
             </article>
