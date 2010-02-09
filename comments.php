@@ -13,7 +13,7 @@
 <?php if ($comments) : // there are comments ?>
 
         <section>
-            <h3><?php comments_number('Kein Kommentar', 'Ein Kommentar', '% Kommentare' ); ?> to &ldquo;<?php the_title(); ?>&rdquo;</h3>
+            <h3><?php comments_number('Kein Kommentar', 'Ein Kommentar', '% Kommentare' ); ?></h3>
 
             <?php foreach ($comments as $comment) : ?>
 
@@ -49,7 +49,7 @@
 <?php if ('open' == $post->comment_status) : ?>
 
         <section>
-            <h3>Leave a Response</h3>
+            <h3>Einen Kommentar hinterlassen</h3>
 
             <?php if (get_option('comment_registration') && !$user_ID) : ?>
             <p>
