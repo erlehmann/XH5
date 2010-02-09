@@ -7,7 +7,6 @@
             <?php return;
         }
     }
-    $oddcomment = 'class="alt" '; // alternating comments
 ?>
 
 <?php if ($comments) : // there are comments ?>
@@ -17,7 +16,7 @@
 
             <?php foreach ($comments as $comment) : ?>
 
-            <article <?php echo $oddcomment; ?>id="comment-<?php comment_ID(); ?>">
+            <article id="comment-<?php comment_ID(); ?>">
                 <header>
                     <h4><?php echo get_avatar( $comment, 32 ); ?> <cite><?php comment_author_link(); ?></cite><a href="#comment-<?php comment_ID(); ?>" title="Permalink für diesen Kommentar"><?php comment_date('F jS, Y'); ?> um <?php comment_time(); ?></a> <?php edit_comment_link('Bearbeiten','',''); ?></h4>
                     <?php if ($comment->comment_approved == '0') : ?>
@@ -29,7 +28,6 @@
                 </section>
             </article>
 
-            <?php $oddcomment = (empty($oddcomment)) ? 'class="alt" ' : ''; // alternating comments ?>
             <?php endforeach; ?>
 
         </section>
