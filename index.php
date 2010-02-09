@@ -30,7 +30,7 @@
 
             <nav>
                 <p>
-                    <?php posts_nav_link('&nbsp;&bull;&nbsp;'); ?>
+                    <?php posts_nav_link(' '); ?>
                 </p>
             </nav>
 

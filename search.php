@@ -20,7 +20,7 @@
                 </ol>
             </article>
             <nav>
-                <p><?php posts_nav_link('&nbsp;&bull;&nbsp;'); ?></p>
+                <p><?php posts_nav_link(' '); ?></p>
             </nav>
 
             <?php else : ?>
