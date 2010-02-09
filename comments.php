@@ -64,13 +64,13 @@
                 <?php else : ?>
 
                 <label for="author">Name <?php if ($req) echo "(required)"; ?></label>
-                <input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="55" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?>>
+                <input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="55" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?>/>
                 
                 <label for="email">Email (wird nicht weitergegeben) <?php if ($req) echo "(required)"; ?></label>
-                <input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="55" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?>>
+                <input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="55" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?>/>
                 
                 <label for="url">Webseite</label>
-                <input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="55" tabindex="3">
+                <input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="55" tabindex="3"/>
 
                 <?php endif; ?>
 
