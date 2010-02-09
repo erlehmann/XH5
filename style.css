@@ -117,16 +117,16 @@ nav {
     clear: both;
 }
 
-body>nav {
+body > nav {
     background-color: rgba(255,255,255,0.5);
 }
 
-    body>nav ul {
+    body > nav ul {
         text-align: left;
         padding: 0 1em;
     }
 
-        body>nav li {
+        body > nav li {
             display: inline-block;
             font-weight: bold;
             margin-right: 20px;
@@ -184,11 +184,20 @@ article[id*=post-] {
     article > section > p,
     article > section > ul {
         margin: 1em 0;
+        min-height: 1em;
     }
 
-    article > header p, 
-    article > footer p {
-        font-style: italic;
+    article > header ul {
+        float: left;
+    }
+
+        article > header ul li {
+            display: inline-block;
+            list-style-type: none;
+        }
+
+    article > header ul + a {
+        float: right;
     }
 
     article section [title] {
@@ -199,8 +208,7 @@ article[id*=post-] {
         padding-left: 2em;
     }
 
-    article .tags {
-        display: none;
+    article > footer .author {
     }
 
 article+nav {
@@ -240,6 +248,7 @@ form[method=post] input {
 /* == ELEMENTS == */
 
 h1, h2, h3, h4, h5, h6 {
+    clear: both;
     color: #2e3436;
 }
 

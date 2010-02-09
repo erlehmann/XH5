@@ -7,19 +7,22 @@
 
             <article id="post-<?php the_ID(); ?>">
                 <header>
-                    <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permalink zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-                    <p>
-                        Pfostiert <?php the_time('F jS, Y'); ?> von <?php the_author(); ?>
-                    </p>
+                    <ul class="categories">
+                        <li><?php the_category('</li>
+                        <li>'); ?></li>
+                    </ul>
+                    <?php comments_popup_link('Kein Kommentar', 'Ein Kommentar', '% Kommentare'); ?>
+                    <h1>
+                        <a href="<?php the_permalink() ?>" rel="bookmark" title="Permalink zu <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                    </h1>
                 </header>
                 <section>
                     <?php the_content('Kostenlose Vollversion …'); ?>
-
                 </section>
                 <footer>
-                    <p>
-                        <?php the_tags('Verschlagwortet: ', ', ', '<br/>'); ?> Pfostiert in <?php the_category(', '); ?><?php edit_post_link('Bearbeiten', '', ''); ?> <?php comments_popup_link('Kommentieren', 'Ein Kommentar', '% Kommentare'); ?>
-                    </p>
+                    <span class="author"><?php the_author(); ?></span>
+                    <?php edit_post_link('Bearbeiten', '', ''); ?>
+                    <time datetime="<?php the_time('c'); ?>"><?php the_time('j. F Y, G:i'); ?></time>
                 </footer>
             </article>
 
