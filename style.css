@@ -154,6 +154,10 @@ aside {
                 list-style: disc outside;
             }
 
+aside label[for="s"] {
+    display: none;
+}
+
 /* == FOOTER == */
 
 body > footer {
