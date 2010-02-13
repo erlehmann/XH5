@@ -315,12 +315,6 @@ code {
     color: #204a87;
 }
 
-kbd {
-    background-color: #555753;
-    border-color: #2e3436;
-    color: #8ae234;
-}
-
 h1, h2, h3, h4, h5, h6 {
     clear: both;
     color: #2e3436;
@@ -339,6 +333,12 @@ ins p:first-child:before {
 ins:first-of-type p:first-child:before {
     content: "Nachtrag: ";
     counter-increment: edit;
+}
+
+kbd {
+    background-color: #555753;
+    border-color: #2e3436;
+    color: #8ae234;
 }
 
 li {
