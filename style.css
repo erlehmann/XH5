@@ -331,6 +331,11 @@ ins p:first-child:before {
     font-weight: bold;
 }
 
+ins:first-of-type p:first-child:before {
+    content: "Nachtrag: ";
+    counter-increment: edit;
+}
+
 li {
     margin: 0.5em 0;
 }
