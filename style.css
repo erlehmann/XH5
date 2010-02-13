@@ -31,10 +31,6 @@ Tags: minimalist, template, xhtml5
 
 /* == BASICS == */
 
-header, footer, section, article, aside, nav {
-    display: block;
-}
-
 body {
     
     background-image: url(images/body-light.png);
@@ -289,6 +285,10 @@ form[method=post] input {
     -moz-outline-radius: 0.5em;
     -webkit-outline-radius: 0.5em;
     padding: 0;
+}
+
+article, aside, footer, header, section, nav {
+    display: block;
 }
 
 article {
