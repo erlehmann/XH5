@@ -224,23 +224,27 @@ article[id*=post-] {
         padding-left: 2em;
     }
 
-    article > footer .author {
-        color: white !important;
-        background-color: #555753 !important;
-        border: 0.25em solid #555753 !important;
-        border-radius: 0.25em;
-        -moz-border-radius: 0.25em;
-        -webkit-border-radius: 0.25em;
-        margin-top: -0.25em;
+    article > footer {
+        margin-top: 1.5em;
     }
 
-    article > footer .post-edit-link {
-        margin: 0 0.25em;
-    }
-
-    article > footer time {
-        float: right;
-    }
+        article > footer .author {
+            color: white !important;
+            background-color: #555753 !important;
+            border: 0.25em solid #555753 !important;
+            border-radius: 0.25em;
+            -moz-border-radius: 0.25em;
+            -webkit-border-radius: 0.25em;
+            margin-top: -0.25em;
+        }
+    
+        article > footer .post-edit-link {
+            margin: 0 0.25em;
+        }
+    
+        article > footer time {
+            float: right;
+        }
 
 article+nav {
     font-weight: bold;
