@@ -228,6 +228,10 @@ article[id*=post-] {
         padding-left: 2em;
     }
 
+        article section blockquote ul {
+            padding-left: 1em;
+        }
+
     article > footer {
         margin-top: 1.5em;
     }
@@ -250,12 +254,13 @@ article[id*=post-] {
             float: right;
         }
 
+article+section {
+    margin: 2em;
+}
+
 article+nav {
     font-weight: bold;
 }
-
-    article > section > h1 {
-    }
 
 /* == COMMENTS == */
 
@@ -355,6 +360,14 @@ kbd {
 
 li {
     margin: 0.5em 0;
+}
+
+mark {
+    background-color: #fce94f;
+    border: 0.25em solid #fce94f;
+    border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
 }
 
 q {
