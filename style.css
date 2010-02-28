@@ -120,6 +120,7 @@ body > nav {
     background-color: rgba(255,255,255,0.5);
 }
 
+    body > nav ol,
     body > nav ul {
         text-align: left;
         padding: 0 1em;
@@ -140,6 +141,7 @@ aside {
     width: 250px;
 }
 
+    aside ol,
     aside ul
     {
         margin: 1em;
@@ -187,6 +189,7 @@ article[id*=post-] {
     article > header,
     article > footer,
     article > section p,
+    article > section ol,
     article > section ul {
         margin: 1em 0;
         min-height: 1.5em;
@@ -224,10 +227,12 @@ article[id*=post-] {
         cursor: help;
     }
 
+    article section ol,
     article section ul {
         padding-left: 2em;
     }
 
+        article section blockquote ol,
         article section blockquote ul {
             padding-left: 1em;
         }
