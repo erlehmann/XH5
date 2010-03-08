@@ -1,6 +1,6 @@
-<?php header("Content-Type: application/xhtml+xml; charset=utf-8") ?>
+<?php header("Content-Type: text/html; charset=utf-8") ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?>>
 	<head>
 
 		<!-- "XH5": The XHTML-5 WordPress Template Theme -->
