@@ -24,7 +24,7 @@ Tags: minimalist, template, xhtml5
 /* == BASICS == */
 
 body {
-
+    font-family: Verdana, helvetica, arial, clean, sans-serif;
     font-size: 11px;
     line-height: 1.5;
     margin: 0 auto;
@@ -265,7 +265,7 @@ blockquote {
 
 code, kbd {
     display: inline-block;
-    font-family: monospace;
+    font-family: "Consolas", "Monaco", "Courier New", "Courier", monospace;
     padding: 0.1em 0.25em;
     white-space: pre-wrap;
     border-width: 0.1em;
