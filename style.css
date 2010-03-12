@@ -33,7 +33,9 @@ body {
 }
 
 nav+section {
+    background-color: #eeeeec;
     clear: none;
+    color: #2e3436;
     float: right;
     overflow: hidden;
     width: 600px;
