@@ -24,6 +24,8 @@ Tags: minimalist, template, xhtml5
 /* == BASICS == */
 
 body {
+    background-color: #3465a4;
+    color: #eeeeec;
     font-family: Verdana, helvetica, arial, clean, sans-serif;
     font-size: 11px;
     line-height: 1.5;
