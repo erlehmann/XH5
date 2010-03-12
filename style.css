@@ -34,10 +34,14 @@ body {
 
 nav+section {
     background-color: #eeeeec;
+    background-image: url("images/sidebar-bg.png");
+    background-position: center left;
+    background-repeat: repeat-y;
     clear: none;
     color: #2e3436;
     float: right;
     overflow: hidden;
+    padding-left: 30px;
     width: 600px;
 }
 
@@ -99,13 +103,9 @@ body > nav {
 
 aside {
     background-color: #3465a4;
-    background-image: url("images/sidebar-bg.png");
-    background-position: center right;
-    background-repeat: repeat-y;
     color: #eeeeec;
     float: left;
     overflow: hidden;
-    padding-right: 30px;
     width: 220px;
 }
 
