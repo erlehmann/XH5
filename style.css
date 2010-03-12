@@ -183,6 +183,14 @@ article[id*=post-] {
         float: right;
     }
 
+    article section > img,
+    article section > p > img,
+    article section > p > a > img {
+        -moz-box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.4);
+        border: 0.25em solid rgba(255, 255, 255, 0.8) !important;
+    }
+
     article section [title] {
         border-bottom: 0.1em dotted #2e3436;
         cursor: help;
