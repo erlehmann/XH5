@@ -34,7 +34,7 @@ body {
 
 nav+section {
     clear: none;
-    float: left;
+    float: right;
     overflow: hidden;
     width: 600px;
 }
@@ -101,9 +101,10 @@ aside {
     background-position: center right;
     background-repeat: repeat-y;
     color: #eeeeec;
+    float: left;
     overflow: hidden;
     padding-right: 30px;
-    width: 250px;
+    width: 220px;
 }
 
     aside ol,
