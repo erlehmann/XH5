@@ -9,7 +9,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="40"
+   width="30"
    height="600"
    id="svg2"
    version="1.1"
@@ -29,35 +29,12 @@
        id="perspective10" />
     <filter
        inkscape:collect="always"
-       id="filter3652"
-       x="-0.16963636"
-       width="1.3392727"
-       y="-0.00622"
-       height="1.01244">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.555"
-         id="feGaussianBlur3654" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       id="filter3760"
-       x="-0.16963636"
-       width="1.3392727"
-       y="-0.00622"
-       height="1.01244">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.555"
-         id="feGaussianBlur3762" />
-    </filter>
-    <filter
-       inkscape:collect="always"
        id="filter3766"
-       x="-0.174"
+       x="-0.17399999"
        width="1.348"
        y="-0.0062142857"
-       height="1.0124286">
+       height="1.0124286"
+       color-interpolation-filters="sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="1.595"
@@ -71,9 +48,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.858048"
-     inkscape:cx="-15.684144"
-     inkscape:cy="-12.77254"
+     inkscape:zoom="1.9881"
+     inkscape:cx="0.16840395"
+     inkscape:cy="521.85404"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -112,7 +89,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -125,7 +102,7 @@
        sodipodi:nodetypes="ccczzzcccc"
        id="path3764"
        d="m 0,2.3621826 20,-8 0,8 c 0,0 2,99.9999974 2,149.9999974 0,50 -4,100 -4,150 0,50 2,100 2,150 0,50 0,150 0,150 l 0,8 -20,-8 L 0,2.3621826 z"
-       style="fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3766);opacity:0.8" />
+       style="opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3766)" />
     <path
        style="fill:#3465a4;fill-opacity:1;stroke:none"
        d="m 0,2.3621826 20,-8 0,8 c 0,0 2,99.9999974 2,149.9999974 0,50 -4,100 -4,150 0,50 2,100 2,150 0,50 0,150 0,150 l 0,8 -20,-8 L 0,2.3621826 z"
