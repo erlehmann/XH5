@@ -74,7 +74,6 @@ body > header {
     }
 
     body > header h2 {
-        color: #2e3436;
         font-size: 2em;
     }
 
@@ -294,8 +293,8 @@ figcaption {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    text-shadow: 0 0 0.25em black;
     clear: both;
-    color: #2e3436;
 }
 
 ins {
