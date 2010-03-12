@@ -96,7 +96,13 @@ body > nav {
 /* == SIDEBAR == */
 
 aside {
+    background-color: #3465a4;
+    background-image: url("images/sidebar-bg.png");
+    background-position: center right;
+    background-repeat: repeat-y;
+    color: #eeeeec;
     overflow: hidden;
+    padding-right: 30px;
     width: 250px;
 }
 
