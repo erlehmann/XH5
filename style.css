@@ -260,7 +260,8 @@ article[id*=post-] {
             float: right;
         }
 
-article+section {
+article + section,
+article + section + section {
     margin: 2em;
 }
 
@@ -271,8 +272,8 @@ article+nav {
 /* == COMMENTS == */
 
 article[id*=comment-] {
-    margin: 15px 0;
-    padding: 10px;
+    margin: 2em 0;
+    padding: 1em 0;
 }
 
     article[id*=comment-] h4 {
