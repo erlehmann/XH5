@@ -113,8 +113,8 @@ aside {
     aside ol,
     aside ul
     {
-        margin: 1em;
-        padding: 0;
+        margin: 0;
+        padding: 1em;
     }
 
         aside ul li {
@@ -123,6 +123,15 @@ aside {
     
             aside ul li ul li {
                 list-style: disc outside;
+            }
+
+            aside ul li.categories ul li a + ul {
+                display: none;
+            }
+
+            aside ul li.categories ul li a:hover + ul,
+            aside ul li.categories ul li a + ul:hover {
+                display: block;
             }
 
 aside label[for="s"] {
