@@ -247,7 +247,7 @@ article+nav {
 
 article[id*=comment-] {
     margin: 2em 0;
-    padding: 1em 0;
+    padding: 0 1em;
 }
 
     article[id*=comment-] h4 {
