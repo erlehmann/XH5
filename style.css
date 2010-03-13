@@ -182,6 +182,7 @@ article[id*=post-] {
 
         article > header ul li {
             display: inline-block;
+            margin: 0;
             list-style-type: none;
         }
 
