@@ -23,8 +23,6 @@
                     <time datetime="<?php the_time('c'); ?>"><?php the_time('j. F Y, G:i'); ?></time>
                     <?php wp_link_pages(array('before' => '<p><strong>Seiten:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
                     <p>
-                        Du kannst Kommentaren mit Hilfe des Feeds folgen: <?php post_comments_feed_link('RSS 2.0'); ?>
-
                         <?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
                             // both comments and pings open ?>
                             Das Hinterlassen von <a href="#respond">Kommentaren</a> und <a href="<?php trackback_url(); ?>" rel="trackback">Trackbacks</a> ist erlaubt und erwünscht.
@@ -42,7 +40,6 @@
                             Kommentare und Trackbacks sind geschlossen.
 
                         <?php } ?>
-
                     </p>
                 </footer>
             </article>
