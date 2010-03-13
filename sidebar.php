@@ -5,7 +5,7 @@
                 <li>
                     <h2>XH5 Theme</h2>
                     <p>
-                        XH5 ist ein Wordpress-Theme entwickelt mit XHTML5. XH5 schaut prima aus (außer im Internet-Explorer, aber wenn du den benutzt, kannst du diesen Text sowieso nicht lesen) und ist hoffentlich irgendwann einmal valides XHTML5 und CSS.
+                        XH5 (rlae branch) ist ein Wordpress-Theme entwickelt mit (X)HTML5. XH5 schaut prima aus (außer im Internet-Explorer) und ist hoffentlich irgendwann einmal valides XHTML5 und CSS.
                     </p>
                 </li>
                 <li>
