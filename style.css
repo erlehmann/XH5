@@ -30,8 +30,7 @@ body {
     font-size: 11px;
     line-height: 1.5;
     margin: 0 auto;
-/*    width: 960px;*/
-    width: 850px;
+    width: 800px;
 }
 
 nav+section {
@@ -44,7 +43,7 @@ nav+section {
     float: right;
     overflow: hidden;
     padding-left: 20px;
-    width: 610px;
+    width: 500px;
 }
 
 /* == LINKS == */
