@@ -17,19 +17,21 @@
             <?php foreach ($comments as $comment) : ?>
 
             <article id="comment-<?php comment_ID(); ?>">
+            <?php if ($comment->comment_approved == '0') : ?>
                 <header>
-                    <h4>
-                        <b class="author"><?php comment_author_link(); ?></b>
-                        <a href="#comment-<?php comment_ID(); ?>" title="Permalink für diesen Kommentar"><?php comment_date('F jS, Y'); ?> um <?php comment_time(); ?></a>
-                        <?php edit_comment_link('Kommentar bearbeiten','',''); ?>
-                    </h4>
-                    <?php if ($comment->comment_approved == '0') : ?>
-                        <p>Dein Kommentar ist in der Moderationswarteschleife.</p>
-                    <?php endif; ?>
+                        <p class="moderation notice">Dein Kommentar ist in der Moderationswarteschleife.</p>
                 </header>
+            <?php endif; ?>
                 <section>
                     <?php comment_text(); ?>
                 </section>
+                <footer>
+                    <span class="author"><?php comment_author_link(); ?></span>
+                    <?php edit_comment_link('Kommentar bearbeiten','',''); ?>
+                    <a href="#comment-<?php comment_ID(); ?>" title="Permalink für diesen Kommentar">
+                        <time datetime="<?php comment_time('c'); ?>"><?php comment_time('j. F Y, G:i'); ?></time>
+                    </a>
+                </footer>
             </article>
 
             <?php endforeach; ?>
