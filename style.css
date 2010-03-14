@@ -124,6 +124,16 @@ aside {
                 list-style: disc outside;
             }
 
+            aside ul li.categories ul li {
+                padding-bottom: 0em;
+                padding-top: 0em;
+            }
+
+            aside ul li.categories ul li a {
+                padding-bottom: 0.5em;
+                padding-top: 0.5em;
+            }
+
             aside ul li.categories ul li a + ul {
                 display: none;
             }
