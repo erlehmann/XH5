@@ -25,7 +25,7 @@
                     <p>
                         <?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
                             // both comments and pings open ?>
-                            Das Hinterlassen von <a href="#comment">Kommentaren</a> und <a href="<?php trackback_url(); ?>" rel="trackback">Trackbacks</a> ist erlaubt und erwünscht.
+                            Das Hinterlassen von <a href="#respond">Kommentaren</a> und <a href="<?php trackback_url(); ?>" rel="trackback">Trackbacks</a> ist erlaubt und erwünscht.
 
                         <?php } elseif (!('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
                             // only pings are open ?>
