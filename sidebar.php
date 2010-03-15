@@ -72,14 +72,6 @@
                 </li>
                 <?php } ?>
 
-                <li>
-                    <h2>XH5 Resources</h2>
-                    <ul>
-                        <li><a href="http://perishablepress.com/" title="Perishable Press">Perishable Press</a></li>
-                        <li><a href="http://diggingintowordpress.com/" title="Digging into WordPress">Digging into WordPress</a></li>
-                        <li><a href="http://css-tricks.com/" title="CSS Tricks">CSS Tricks</a></li>
-                    </ul>
-                </li>
             <?php endif; ?>
             </ul>
         </aside>
