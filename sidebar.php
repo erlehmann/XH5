@@ -59,7 +59,6 @@
                     <?php } ?>
                 </li>
                 <?php }?>
-                <?php wp_list_pages('title_li=<h2>Seiten</h2>' ); ?>
 
                 <?php if (is_home() || is_page() || is_single()) { ?>
                 <?php wp_list_bookmarks(); ?>
