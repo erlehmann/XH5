@@ -171,6 +171,15 @@ article[id*=post-] {
     
 }
 
+    article a {
+        background-color: #EEEEEC;
+        color: #204a87;
+    }
+
+    article a:hover {
+        border-bottom-color: #204a87;
+    }
+
     article > header,
     article > footer,
     article > footer p,
@@ -283,6 +292,14 @@ form[method=post] input {
     margin: 0;
     padding: 0;
 }
+
+a {
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    border-bottom-width: 0.1em;
+    text-decoration: none;
+}
+
 
 article, aside, figure, figcaption, footer, header, section, nav {
     display: block;
