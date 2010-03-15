@@ -3,15 +3,8 @@
             <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
 
                 <li>
-                    <h2>XH5 Theme</h2>
-                    <p>
-                        XH5 (rlae branch) ist ein Wordpress-Theme entwickelt mit (X)HTML5. XH5 schaut prima aus (außer im Internet-Explorer) und ist hoffentlich irgendwann einmal valides XHTML5 und CSS.
-                    </p>
-                </li>
-                <li>
                     <h2>Seite durchsuchen</h2>
                     <?php get_search_form(); ?>
-
                 </li>
 
                 <?php wp_list_categories('show_count=1&title_li=<h2>Kategorien</h2>'); ?>
