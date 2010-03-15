@@ -108,6 +108,15 @@ aside {
     width: 220px;
 }
 
+    aside a {
+        background-color: #3465a4;
+        color: #ffffff;
+    }
+
+    aside a:hover {
+        border-bottom-color: #ffffff;
+    }
+
     aside ol,
     aside ul
     {
