@@ -50,8 +50,8 @@
 
 <?php if ('open' == $post->comment_status) : ?>
 
-        <section>
-            <h3>Einen Kommentar hinterlassen</h3>
+        <section id="comments">
+            <h3 id="respond">Einen Kommentar hinterlassen</h3>
 
             <?php if (get_option('comment_registration') && !$user_ID) : ?>
             <p>
