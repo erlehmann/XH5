@@ -183,7 +183,8 @@ article[id*=post-] {
     article > header,
     article > footer,
     article > footer p,
-    article > section p,
+    article > section > img,
+    article > section > p,
     article > section ol,
     article > section ul {
         margin: 1em 0;
