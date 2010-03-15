@@ -291,8 +291,14 @@ form[method=post] label {
 }
 
 form[method=post] input {
-    margin: 2px 0 12px 0;
+    margin: 0.25em 0 1em 0;
     display: block;
+}
+
+section#comments form input[type=submit],
+section#comments form textarea {
+    min-height: 4em;
+    width: 100%;
 }
 
 /* == GENERAL CLASSES == */
