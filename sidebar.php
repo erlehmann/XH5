@@ -7,6 +7,8 @@
                     <?php get_search_form(); ?>
                 </li>
 
+                <?php wp_list_pages('title_li=<h2>Seiten</h2>' ); ?>
+
                 <?php wp_list_categories('show_count=1&title_li=<h2>Kategorien</h2>'); ?>
 
                 <li>
