@@ -133,22 +133,12 @@ aside {
             }
 
             aside ul li.categories ul li {
-                padding-bottom: 0em;
-                padding-top: 0em;
+                height: 1.5em;
+                overflow: hidden;
             }
 
-            aside ul li.categories ul li a {
-                padding-bottom: 0.5em;
-                padding-top: 0.5em;
-            }
-
-            aside ul li.categories ul li a + ul {
-                display: none;
-            }
-
-            aside ul li.categories ul li a:hover + ul,
-            aside ul li.categories ul li a + ul:hover {
-                display: block;
+            aside ul li.categories ul li:hover {
+                height: 100%;
             }
 
 aside label[for="s"] {
