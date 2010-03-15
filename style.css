@@ -142,13 +142,14 @@ aside {
                 list-style: disc outside;
             }
 
-            aside ul li.categories ul li {
-                height: 1.5em;
-                overflow: hidden;
+            aside ul li.categories ul li ul {
+                padding-bottom: 0;
+                padding-top: 0;
+                display: none;
             }
 
-            aside ul li.categories ul li:hover {
-                height: 100%;
+            aside ul li.categories ul li:hover > ul {
+                display: block;
             }
 
 aside label[for="s"] {
