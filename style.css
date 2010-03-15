@@ -36,7 +36,7 @@ body {
 nav+section {
     background-color: #eeeeec;
     background-image: url("images/main-bg.png");
-    background-position: center left;
+    background-position: top left;
     background-repeat: repeat-y;
     clear: none;
     color: #2e3436;
