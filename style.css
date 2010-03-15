@@ -128,7 +128,16 @@ aside {
         aside ul li {
             list-style: none;
         }
-    
+
+        aside ul li.meta {
+            opacity: 0.5;
+        }
+
+        aside > ul > li + li {
+            border-top: 0.25em dashed rgba(255, 255, 255, 0.2);
+            padding-top: 1em;
+        }
+
             aside ul li ul li {
                 list-style: disc outside;
             }

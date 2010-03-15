@@ -63,7 +63,7 @@
                 <?php if (is_home() || is_page() || is_single()) { ?>
                 <?php wp_list_bookmarks(); ?>
 
-                <li>
+                <li class="meta">
                     <h2>Meta</h2>
                     <ul>
                         <?php wp_register(); ?>
