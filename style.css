@@ -83,6 +83,7 @@ nav {
 }
 
 body > nav {
+    display: none;
 }
 
     body > nav ol,
