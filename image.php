@@ -53,7 +53,7 @@
         <?php comments_template(); ?>
 
         <nav>
-            <p><?php previous_post_link(); ?><?php next_post_link(); ?></p>
+            <p><?php previous_post_link('%link'); ?><?php next_post_link('%link'); ?></p>
         </nav>
 
     <?php endwhile; else: ?>

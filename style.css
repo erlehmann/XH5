@@ -99,6 +99,22 @@ body > nav {
             padding: 1em;
         }
 
+a[rel=prev] {
+    float: left;
+}
+
+    a[rel=prev]:before {
+        content: "« ";
+    }
+
+a[rel=next] {
+    float: right;
+}
+
+a[rel=next]:after {
+        content: " »";
+    }
+
 /* == SIDEBAR == */
 
 aside {
