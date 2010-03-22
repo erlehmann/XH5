@@ -127,15 +127,6 @@ aside {
     width: 220px;
 }
 
-    aside a {
-        background-color: #3465a4;
-        color: #ffffff;
-    }
-
-    aside a:hover {
-        border-bottom-color: #ffffff;
-    }
-
     aside ol,
     aside ul
     {
@@ -199,12 +190,18 @@ article[id*=post-] {
     
 }
 
-    article a {
+    article a,
+    article + section a,
+    article + section + section a,
+    article + section + section + nav a {
         background-color: #EEEEEC;
         color: #204a87;
     }
 
-    article a:hover {
+    article a:hover,
+    article + section a:hover,
+    article + section + section a:hover,
+    article + section + section + nav a:hover {
         border-bottom-color: #204a87;
     }
 
@@ -355,6 +352,14 @@ a {
     text-decoration: none;
 }
 
+a {
+    background-color: #3465a4;
+    color: #ffffff;
+}
+
+a:hover {
+    border-bottom-color: #ffffff;
+}
 
 article, aside, figure, figcaption, footer, header, section, nav {
     display: block;
