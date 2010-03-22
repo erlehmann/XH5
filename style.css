@@ -279,8 +279,10 @@ article[id*=post-] {
         }
 
 article + section,
-article + section + section {
+article + section + section,
+article + section + section + nav {
     margin: 2em;
+    min-height: 1.5em;
 }
 
 article+nav {
