@@ -304,10 +304,6 @@ article[id*=comment-] {
         background: #eee;
     }
 
-form[method=post] label {
-    display: block;
-}
-
 form[method=post] input {
     margin: 0.25em 0 1em 0;
     display: block;
@@ -317,6 +313,14 @@ section#comments form input[type=submit],
 section#comments form textarea {
     min-height: 4em;
     width: 100%;
+}
+
+form[method=post] label {
+    display: block;
+}
+
+form[method=post] label[for=comment] {
+    display: none;
 }
 
 /* == GENERAL CLASSES == */
