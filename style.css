@@ -30,7 +30,7 @@ body {
     font-size: 11px;
     line-height: 1.5;
     margin: 0 auto;
-    width: 800px;
+    width: 960px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -44,7 +44,7 @@ nav+section {
     float: right;
     overflow: hidden;
     padding: 0 20px;
-    width: 500px;
+    width: 700px;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 
