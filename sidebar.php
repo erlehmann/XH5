@@ -74,9 +74,6 @@
                     <ul>
                         <?php wp_register(); ?>
                         <li><?php wp_loginout(); ?></li>
-                        <li><a href="http://validator.w3.org/check/referer" title="Built with valid HTML 5" rel="nofollow">Valid <abbr title="HyperText Markup Language">XHTML</abbr>5</a></li>
-                        <li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fdiggingintowordpress.com%2FThemePlayground%2Fwp-content%2Fthemes%2FH5%2Fstyle.css&profile=css21&usermedium=all&warning=1&lang=en" title="Styled with valid CSS" rel="nofollow">Valid CSS 2.1</a></li>
-                        <li><a href="http://wordpress.org/" title="Proudly Powered by WordPress" rel="nofollow">WordPress</a></li>
                         <?php wp_meta(); ?>
                     </ul>
                 </li>
