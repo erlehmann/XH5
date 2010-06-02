@@ -19,15 +19,7 @@ Tags: minimalist, template, xhtml5
 
 /* fonts */
 
-@font-face {
-  font-family: "Anonymous Pro";
-  src: local("Anonymous Pro"), url("fonts/AnonymousPro.ttf") format('truetype');
-}
-
-@font-face {
-  font-family: "Droid Sans";
-  src: local("Droid Sans"), url("fonts/DroidSans.ttf") format('truetype');
-}
+/* handled externally in header.php; currently available: Droid Sans, Inconsolata */
 
 /* == BASICS == */
 
@@ -344,7 +336,7 @@ blockquote {
 
 code, kbd {
     display: inline-block;
-    font-family: "Anonymous Pro", monospace;
+    font-family: "Inconsolata", monospace;
     padding: 0.1em 0.25em;
     white-space: pre-wrap;
     border-width: 0.1em;
