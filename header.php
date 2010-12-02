@@ -2,9 +2,10 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
-<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 <meta charset=utf-8>
 <meta name=description content="<?php bloginfo('description'); ?>">
+
+<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 
 <link rel=stylesheet href="<?php bloginfo('stylesheet_url'); ?>" media="screen">
 <link rel=alternate type=text/xml title="<?php bloginfo('name'); ?> RSS 0.92 Feed" href="<?php bloginfo('rss_url'); ?>">
