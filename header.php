@@ -15,9 +15,10 @@
 <body <?php body_class(); ?>>
 
 <header>
-    <h1><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a></h1>
+    <h1><?php bloginfo('name'); ?></h1>
     <h2><?php bloginfo('description'); ?></h2>
 </header>
+
 <nav>
     <ul>
         <?php wp_list_pages('title_li='); ?>
