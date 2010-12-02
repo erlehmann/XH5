@@ -11,11 +11,10 @@
 
 <?php wp_head(); ?>
 
-<header>
-    <hgroup>
-        <h1><?php bloginfo('name'); ?></h1><h2><?php bloginfo('description'); ?></h2>
-    </hgroup>
-</header>
+<header><hgroup>
+    <h1><?php bloginfo('name'); ?></h1>
+    <h2><?php bloginfo('description'); ?></h2>
+</hgroup></header>
 
 <nav><ul>
     <?php wp_list_pages('title_li='); ?>
