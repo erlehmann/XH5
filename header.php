@@ -1,6 +1,5 @@
 <?php header("Content-Type: text/html; charset=utf-8") ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
 
 <meta charset=utf-8>
 <meta name=description content="<?php bloginfo('description'); ?>">
