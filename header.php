@@ -7,7 +7,8 @@
 <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 
 <link rel=stylesheet href="<?php bloginfo('stylesheet_url'); ?>" media="screen">
-<link rel=alternate type=application/atom+xml title="<?php bloginfo('name'); ?> Feed" href="<?php bloginfo('atom_url'); ?>">
+<link rel=alternate type=application/atom+xml title="Artikelfeed" href="<?php bloginfo('atom_url'); ?>">
+<link rel=alternate type=application/atom+xml title="Kommentarfeed" href="<?php bloginfo('comments_atom_url'); ?>">
 <link rel=pingback href="<?php bloginfo('pingback_url'); ?>">
 
 <?php wp_head(); ?>
