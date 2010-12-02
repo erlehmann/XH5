@@ -1,9 +1,7 @@
 <?php header("Content-Type: text/html; charset=utf-8") ?>
 <!DOCTYPE html>
 
-<meta charset=utf-8>
-<meta name=description content="<?php bloginfo('description'); ?>">
-
+<meta charset=utf-8><meta name=description content="<?php bloginfo('description'); ?>">
 <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 
 <link rel=stylesheet href="<?php bloginfo('stylesheet_url'); ?>" media="screen">
@@ -18,8 +16,6 @@
     <h2><?php bloginfo('description'); ?></h2>
 </header>
 
-<nav>
-    <ul>
-        <?php wp_list_pages('title_li='); ?>
-    </ul>
-</nav>
+<nav><ul>
+    <?php wp_list_pages('title_li='); ?>
+</ul></nav>
