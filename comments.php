@@ -27,9 +27,7 @@
                         <p>Dein Kommentar ist in der Moderationswarteschleife.</p>
                     <?php endif; ?>
                 </header>
-                <section>
-                    <?php comment_text(); ?>
-                </section>
+                <?php comment_text(); ?>
             </article>
 
             <?php endforeach; ?>
