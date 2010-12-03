@@ -16,6 +16,7 @@
     <h2><?php bloginfo('description'); ?></h2>
 </hgroup></header>
 
-<nav><ul>
-    <?php wp_list_pages('title_li='); ?>
-</ul></nav>
+<nav>
+    <h1>Navigation</h1>
+    <ul><?php wp_list_pages('title_li='); ?></ul>
+</nav>
