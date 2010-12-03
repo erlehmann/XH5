@@ -21,25 +21,6 @@
         <?php edit_post_link('Artikel bearbeiten', '', ''); ?>
         <time datetime="<?php the_time('c'); ?>"><?php the_time('j. F Y, G:i'); ?></time>
         <?php wp_link_pages(array('before' => '<p><strong>Seiten:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-        <p>
-            <?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
-                // both comments and pings open ?>
-                Das Hinterlassen von <a href="#respond">Kommentaren</a> und <a href="<?php trackback_url(); ?>" rel="trackback">Trackbacks</a> ist erlaubt und erwünscht.
-
-            <?php } elseif (!('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
-                // only pings are open ?>
-                Kommentare sind geschlossen, <a href="<?php trackback_url(); ?> " rel="trackback">Trackbacks</a> erlaubt.
-
-            <?php } elseif (('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
-                // comments are open, pings are not ?>
-                Kommentare sind erlaubt, Trackbacks geschlossen.
-
-            <?php } elseif (!('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
-                // neither comments nor pings are open ?>
-                Kommentare und Trackbacks sind geschlossen.
-
-            <?php } ?>
-        </p>
     </footer>
 
     <?php comments_template(); ?>

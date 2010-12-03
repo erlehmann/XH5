@@ -12,7 +12,28 @@
 <?php if ($comments) : // there are comments ?>
 
         <section>
-            <h3><?php comments_number('Kein Kommentar', 'Ein Kommentar', '% Kommentare' ); ?></h3>
+            <header>
+                <h3><?php comments_number('Kein Kommentar', 'Ein Kommentar', '% Kommentare' ); ?></h3>
+                <p>
+                    <?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
+                        // both comments and pings open ?>
+                        Das Hinterlassen von <a href="#respond">Kommentaren</a> und <a href="<?php trackback_url(); ?>" rel="trackback">Trackbacks</a> ist erlaubt und erwünscht.
+        
+                    <?php } elseif (!('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
+                        // only pings are open ?>
+                        Kommentare sind geschlossen, <a href="<?php trackback_url(); ?> " rel="trackback">Trackbacks</a> erlaubt.
+        
+                    <?php } elseif (('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
+                        // comments are open, pings are not ?>
+                        Kommentare sind erlaubt, Trackbacks geschlossen.
+        
+                    <?php } elseif (!('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
+                        // neither comments nor pings are open ?>
+                        Kommentare und Trackbacks sind geschlossen.
+        
+                    <?php } ?>
+                </p>
+            </header>
 
             <?php foreach ($comments as $comment) : ?>
 

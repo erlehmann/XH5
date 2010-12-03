@@ -17,6 +17,6 @@
 </hgroup></header>
 
 <nav>
-    <h1>Navigation</h1>
+    <h1>Seiten</h1>
     <ul><?php wp_list_pages('title_li='); ?></ul>
 </nav>
