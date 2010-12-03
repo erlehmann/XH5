@@ -52,36 +52,12 @@ nav+section {
 
 /* == LINKS == */
 
-a {
-    text-decoration: none;
-}
-
-a:active {
-    outline: 0.25em dotted #fcaf3e;
-}
-
-a:focus, a:hover {
-    outline: 0.25em solid #fcaf3e;
-}
-
-a:link, a:visited {
-    color: #3465a4;
-    border-bottom: 0.1em solid #3465a4;
-}
-
-article section a:visited:after {
-    border: none;
-    content: " ✔";
-    opacity: 0.5;
-    text-decoration: none;
-}
-
 header h1 a:active,
 header h1 a:hover,
 header h1 a:link,
 header h1 a:visited {
-        color: inherit;
-        border-bottom: none;
+        color: inherit !important;
+        border: none !important;
     }
 
 /* == HEADER == */
@@ -329,7 +305,14 @@ section#comments form textarea {
     -moz-outline-radius: 0.5em;
     -webkit-outline-radius: 0.5em;
     padding: 0;
+    text-decoration: none;
 }
+
+a { border-bottom-width: 0.1em; border-bottom-style: solid; }
+    a:active { outline: 0.25em dotted #fcaf3e; }
+    a:focus, a:hover { outline: 0.25em solid #fcaf3e; }
+    a:link { color: #3465a4; border-bottom-color: #3465a4; }
+    a:visited { color: #5c3566; border-bottom-color: #5c3566; }
 
 article, aside, figure, figcaption, footer, header, section, nav {
     display: block;
