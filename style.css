@@ -101,10 +101,11 @@ body > aside {
     background-color: white;
     margin-left: 550px;
     padding-left: 2em;
+    margin-top: 1em;
 }
 
-    body > aside ol,
-    body > aside ul { padding: 0; }
+    body > aside > ol,
+    body > aside > ul { padding: 0; }
 
         body > aside ul > li { list-style: none; }
 
