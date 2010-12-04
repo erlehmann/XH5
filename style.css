@@ -5,12 +5,14 @@ Description: A minimalist WordPress template theme built with XHTML 5.
 Version: 1.0
 Author: erlehmann, Jeff Starr
 Author URI: 
-Tags: minimalist, template, xhtml5
+Tags: html5
 
     H5 v1.0
     http://diggingintowordpress.com/
 
-    This theme was lovingly designed and developed by Jeff Starr, 
+    This theme is developed by erlehmann.
+
+    It as based on a theme designed and developed by Jeff Starr, 
     who blogs at perishablepress.com and designs at monzilla.biz.
 
     The CSS, HTML and design is released under GPL:
@@ -31,40 +33,26 @@ Tags: minimalist, template, xhtml5
 
 /* == BASICS == */
 
+html {
+    color: black;
+    background-color: #eeeeec;
+}
+
 body {
-    
-    background-image: url(images/body-light.png);
-    background-color: #d3d7cf;
-    font-size: 11px;
-    line-height: 1.5;
+    color: black;
+    background-color: white;
+    line-height: 2;
     margin: 0 auto;
-/*    width: 960px;*/
-    width: 850px;
+    padding: 2em;
+    width: 960px;
 }
-
-nav+section {
-    background-color: rgba(255,255,255,0.8);
-    clear: none;
-    float: left;
-    overflow: hidden;
-    width: 600px;
-}
-
-/* == LINKS == */
-
-header h1 a:active,
-header h1 a:hover,
-header h1 a:link,
-header h1 a:visited {
-        color: inherit !important;
-        border: none !important;
-    }
 
 /* == HEADER == */
 
 body > header {
+    border-bottom: 0.1em solid black;
+    border-top: 0.1em solid black;
     padding: 2em;
-    background-color: rgba(255, 255, 255, 0.8);
 }
 
     body > header h1,
@@ -87,20 +75,15 @@ body > header {
 
 /* == NAVIGATION == */
 
-nav {
-    text-align: center;
-    clear: both;
-}
-
-body > nav {
-    background-color: rgba(255,255,255,0.5);
-}
+body > nav { clear: both; }
 
     body > nav > h1 { display: none; }
 
+    body > nav:first-of-type { position: absolute; top: 0; }
+    body > header:first-of-type { margin-top: 3em; }
+
     body > nav ol,
     body > nav ul {
-        text-align: left;
         padding: 0 1em;
     }
 
@@ -113,141 +96,96 @@ body > nav {
 
 /* == SIDEBAR == */
 
-aside {
-    background-color: rgba(255,255,255,0.8);
-    overflow: hidden;
-    width: 250px;
-}
+body > aside { color: black; background-color: white; }
 
-    aside ol,
-    aside ul
-    {
-        margin: 1em;
-        padding: 0;
-    }
+    body > aside ol,
+    body > aside ul { padding: 0; }
 
-        aside ul li {
-            list-style: none;
-        }
-    
-            aside ul li ul li {
-                list-style: disc outside;
-            }
+        body > aside ul > li { list-style: none; }
 
-aside label[for="s"] {
-    display: none;
-}
+            body > aside ul > li > ul > li { list-style: disc outside; }
 
 /* == FOOTER == */
 
 body > footer {
-    background-color: rgba(255,255,255,0.5);
     padding: 2em;
     text-align: center;
     overflow: hidden;
     width: 100%;
     clear: both;
-    }
+}
 
 /* == POSTS == */
 
-article {
-    margin: 2em;
+body > article {
+    color: black;
+    background-color: white;
+    clear: none;
+    float: left;
+    margin-right: 2em;
+    padding: 2em 0;
+    width: 550px;
 }
 
-article + article {
-    border-top: 0.25em solid rgba(0,0,0,0.2);
-    padding-top: 1em;
+body > article + article {
+    border-top: 0.1em solid #2e3436;
 }
 
-article[id*=post-] {
-    
-}
-
-    article > header,
-    article > footer,
-    article > footer p,
-    article > section > img,
-    article > section > p,
-    article > section ol,
-    article > section ul {
-        margin: 1em 0;
-        min-height: 1.5em;
+    body > article > header {
+        margin-top: 0;
     }
 
-    article > header ul,
-    article > header ul + a {
-        margin-bottom: 1em;
-    }
-
-    article > header ul {
-        display: inline-block;
-    }
-
-        article > header ul li {
+        body > article > header ul,
+        body > article > header ul + a {
             display: inline-block;
-            margin: 0;
-            list-style-type: none;
+            margin-bottom: 1em;
         }
 
-            article > header ul li a {
-                color: white !important;
-                background-color: #729fcf !important;
-                border: 0.25em solid #729fcf !important;
-                border-radius: 0.25em;
-                -moz-border-radius: 0.25em;
-                -webkit-border-radius: 0.25em;
-            }
-
-    article > header ul + a {
-        float: right;
-    }
-
-    article section [title] {
-        border-bottom: 0.1em dotted #2e3436;
-        cursor: help;
-    }
-
-    article section ol,
-    article section ul {
-        padding-left: 2em;
-    }
-
-        article section blockquote ol,
-        article section blockquote ul {
-            padding-left: 1em;
-        }
-
-    article > footer {
-        margin-top: 1.5em;
-    }
-
-        article > footer .author {
-            color: white !important;
-            background-color: #555753 !important;
-            border: 0.25em solid #555753 !important;
-            border-radius: 0.25em;
-            -moz-border-radius: 0.25em;
-            -webkit-border-radius: 0.25em;
-            margin-top: -0.25em;
-        }
-    
-        article > footer .post-edit-link {
-            margin: 0 0.25em;
-        }
-    
-        article > footer time {
+        body > article > header ul + a {
             float: right;
         }
 
-article + section,
-article + section + section {
-    margin: 2em;
-}
+        body > article > header ul > li {
+            display: inline-block;
+            margin: 0;
+            list-style: none;
+        }
 
-article+nav {
-    font-weight: bold;
-}
+            body > article > header ul > li > a {
+                color: white !important;
+                background-color: #3465a4 !important;
+                border: 0.25em solid #3465a4 !important;
+            }
+
+        body > article > header > h1 {
+            clear: both;
+        }
+
+    body > article > * {
+        border: none;
+        display: block; /* needed for collapsing margins */
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    body > article > footer {
+        margin-bottom: 0;
+    }
+
+        body > article > footer .author {
+            color: white !important;
+            background-color: #555753 !important;
+            border: 0.25em solid #555753 !important;
+            margin-top: -0.25em;
+        }
+    
+        body > article > footer .post-edit-link {
+            margin: 0 0.25em;
+        }
+    
+        body > article > footer time {
+            float: right;
+        }
 
 /* == COMMENTS == */
 
@@ -280,22 +218,6 @@ section#comments form textarea {
     width: 100%;
 }
 
-/* == GENERAL CLASSES == */
-
-.right {
-    clear: both;
-    float: right;
-    margin-bottom: 1em;
-    margin-left: 1em;
-}
-
-.left {
-    clear: both;
-    float: left;
-    margin-bottom: 1em;
-    margin-right: 1em;
-}
-
 /* == ELEMENTS == */
 
 * {
@@ -308,11 +230,32 @@ section#comments form textarea {
     text-decoration: none;
 }
 
-a { border-bottom-width: 0.1em; border-bottom-style: solid; }
+a {
+    border-bottom-width: 0.1em;
+    border-bottom-style: solid;
+}
+
     a:active { outline: 0.25em dotted #fcaf3e; }
     a:focus, a:hover { outline: 0.25em solid #fcaf3e; }
-    a:link { color: #3465a4; border-bottom-color: #3465a4; }
-    a:visited { color: #5c3566; border-bottom-color: #5c3566; }
+
+    a:link {
+        color: #204a87;
+        border-bottom-color: #204a87;
+    }
+
+    a:visited {
+        color: #5c3566;
+        border-bottom-color: #5c3566;
+    }
+
+    h1 > a:active,
+    h1 > a:hover,
+    h1 > a:link,
+    h1 > a:visited {
+            color: inherit !important;
+            background-color: inherit !important;
+            border: none !important;
+        }
 
 article, aside, figure, figcaption, footer, header, section, nav {
     display: block;
@@ -342,14 +285,9 @@ code {
     color: #204a87;
 }
 
-figcaption {
-    text-align: center;
-}
+figcaption { text-align: center; }
 
-h1, h2, h3, h4, h5, h6 {
-    clear: both;
-    color: #2e3436;
-}
+h1, h2, h3, h4, h5, h6 { color: #2e3436; }
 
 ins {
     text-decoration: none;
@@ -372,20 +310,26 @@ kbd {
     color: #8ae234;
 }
 
-li {
-    margin: 0.5em 0;
-}
+li { margin: 0.5em 0; }
 
 mark {
     background-color: #fce94f;
     border: 0.25em solid #fce94f;
-    border-radius: 0.25em;
-    -moz-border-radius: 0.25em;
-    -webkit-border-radius: 0.25em;
 }
 
-q {
-    quotes: "„"   "“" "‚" "‘";
-}
+ol,
+ul { padding-left: 2em; }
 
-/* == ALL YOUR CODE ARE BELONG TO POETRY == */
+    footer ol,
+    footer ul,
+    header ol,
+    header ul,
+    nav ol,
+    nav ul { padding-left: 0; }
+
+q { quotes: "„"   "“" "‚" "‘"; }
+
+[title] {
+    border-bottom: 0.1em dotted #2e3436 !important;
+    cursor: help !important;
+}
