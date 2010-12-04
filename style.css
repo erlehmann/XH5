@@ -96,7 +96,12 @@ body > nav { clear: both; }
 
 /* == SIDEBAR == */
 
-body > aside { color: black; background-color: white; }
+body > aside {
+    color: black;
+    background-color: white;
+    margin-left: 550px;
+    padding-left: 2em;
+}
 
     body > aside ol,
     body > aside ul { padding: 0; }
